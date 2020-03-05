@@ -12,8 +12,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/main/resources/com/vtiger/userstories/login.feature"
 		,glue= {"com.vtiger.stepdefinitions"},
-		 format = {"pretty", "html:target/Destination"} ,
-				 //plugin = { "pretty", "json:target/cucumber.json" },
+		 format = //{"pretty", "html:target/Destination"} ,
+				 plugin = { "pretty", "json:target/cucumber.json" },
 				// plugin = { "pretty", "json:target/cucumber.json" },
 				 tags = {"@Smoke,@sanity"},////or
 				 //tags = {"@Smoke","@sanity"},////and
